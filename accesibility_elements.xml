@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
+	author="LorenzoStucchi" 
+	version="0.0.1" 
+	shortdescription="Preset to be used to map the elements of accesibility" 
+	it.shortdescription=""
+	description="Set of preset to be used to map the elements of accesibility, used inside the ViaLibera?! project" 
+	it.description=""
+	link="https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera"
+	icon="">
+
+<!-- Schema for kerbs -->
+<group name="Kerbs" it.name="Cordoli" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb.png">
+	<!-- Schema for raised kerb -->
+	<item name="Raised kerb" it.name="Cordolo rialzato" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_red.png">
+		<label text="Insert the elements for a raised kerb" it.text="Inserire gli elementi per un cordolo rialzato" />
+		<space />
+		<key key="kerb" value="raised" />
+		<combo key="surface" text="Surface material" it.text="Materiale della superficie">
+			<list_entry value="aphalt" it.display_value="Asfalto"/>
+			<list_entry value="paving_stones" it.display_value="Pavimentato"/>
+			<list_entry value="sett" it.display_value="San pietrini"/>
+		</combo>
+		<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
+			<list_entry value="excellent" it.display_value="Eccellente"/>
+			<list_entry value="good" it.display_value="Buona"/>
+			<list_entry value="intermediate" it.display_value="Intermedia"/>
+			<list_entry value="bad" it.display_value="Cattiva"/>
+		</combo>
+		<text key="width" text="kerb width(e.g. 1.2 m)" it.text="Larghezza del cordolo(e.s. 1.2 m)" delete_if_empty="true" />
+		<text key="kerb:height" text="kerb height(e.g. 0.02 m)" it.text="Altezza del cordolo(e.s. 0.02 m)" delete_if_empty="true" />
+		<text key="incline" text="kerb inlination(e.g. 2.5%)" it.text="Inclinazione del cordolo(e.s. 2.5%)" delete_if_empty="true" />
+		<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+	</item>
+
+	<!-- Schema for lowered kerb -->
+	<item name="Lowered kerb" it.name="Cordolo ribassato" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_orange.png">
+		<label text="Insert the elements for a lowered kerb" it.text="Inserire gli elementi per un cordolo ribassato" />
+		<space />
+		<key key="kerb" value="lowered" />
+		<combo key="surface" text="Surface material" it.text="Materiale della superficie">
+			<list_entry value="aphalt" it.display_value="Asfalto"/>
+			<list_entry value="paving_stones" it.display_value="Pavimentato"/>
+			<list_entry value="sett" it.display_value="San pietrini"/>
+		</combo>
+		<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
+			<list_entry value="excellent" it.display_value="Eccellente"/>
+			<list_entry value="good" it.display_value="Buona"/>
+			<list_entry value="intermediate" it.display_value="Intermedia"/>
+			<list_entry value="bad" it.display_value="Cattiva"/>
+		</combo>
+		<text key="width" text="kerb width(e.g. 1.2 m)" it.text="Larghezza del cordolo(e.s. 1.2 m)" delete_if_empty="true" />
+		<text key="kerb:height" text="kerb height(e.g. 0.02 m)" it.text="Altezza del cordolo(e.s. 0.02 m)" delete_if_empty="true" />
+		<text key="incline" text="kerb inlination(e.g. 2.5%)" it.text="Inclinazione del cordolo(e.s. 2.5%)" delete_if_empty="true" />
+		<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+	</item>
+
+	<!-- Schema for flush kerb -->
+	<item name="Flush kerb" it.name="Cordolo a livello" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_green.png">
+		<label text="Insert the elements for a flush kerb" it.text="Inserire gli elementi per un cordolo a livello" />
+		<space />
+		<key key="kerb" value="flush" />
+		<combo key="surface" text="Surface material" it.text="Materiale della superficie">
+			<list_entry value="aphalt" it.display_value="Asfalto"/>
+			<list_entry value="paving_stones" it.display_value="Pavimentato"/>
+			<list_entry value="sett" it.display_value="San pietrini"/>
+		</combo>
+		<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
+			<list_entry value="excellent" it.display_value="Eccellente"/>
+			<list_entry value="good" it.display_value="Buona"/>
+			<list_entry value="intermediate" it.display_value="Intermedia"/>
+			<list_entry value="bad" it.display_value="Cattiva"/>
+		</combo>
+		<text key="width" text="kerb width(e.g. 1.2 m)" it.text="Larghezza del cordolo(e.s. 1.2 m)" delete_if_empty="true" />
+		<text key="kerb:height" text="kerb height(e.g. 0.02 m)" it.text="Altezza del cordolo(e.s. 0.02 m)" delete_if_empty="true" />
+		<text key="incline" text="kerb inlination(e.g. 2.5%)" it.text="Inclinazione del cordolo(e.s. 2.5%)" delete_if_empty="true" />
+		<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+	</item>
+</group>
+
+
+</presets>
