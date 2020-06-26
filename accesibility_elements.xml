@@ -200,7 +200,7 @@
 		</item>
 
 		<!-- Schema for drain -->
-		<item name="Drain" it.name="Caditoia, tombino" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/drain.svg">
+		<item name="Drain" it.name="Caditoia, tombino" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/drain.png">
 			<label text="Insert the elements for a drain" it.text="Inserire gli elementi per una caditoia" />
 			<space />
 			<key key="manhole" value="drain" />
@@ -209,7 +209,7 @@
 		</item>
 
 		<!-- Schema for planter -->
-		<item name="Planter" it.name="Fioriera" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/planter.svg">
+		<item name="Planter" it.name="Fioriera" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/planter.png">
 			<label text="Insert the elements for a planter" it.text="Inserire gli elementi per una fioriera" />
 			<space />
 			<key key="man_made" value="planter" />
@@ -217,7 +217,7 @@
 		</item>
 
 		<!-- Schema for block -->
-		<item name="Block barrier" it.name="Panettone" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/block.svg">
+		<item name="Block barrier" it.name="Panettone" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/block.png">
 			<label text="Insert the elements for a block barrier" it.text="Inserire gli elementi per un panettone" />
 			<space />
 			<key key="barrier" value="block" />
@@ -299,7 +299,7 @@
 	</item>
 
 	<!-- Schema for sidewalk -->
-	<item name="Sidewalks" it.name="Marciapiede" type="way" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/sidewalk.svg">
+	<item name="Sidewalks" it.name="Marciapiede" type="way" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/sidewalk.png">
 		<label text="Insert the elements for a sidewalk" it.text="Inserire gli elementi per un marciapiede" />
 		<space />
 		<key key="highway" value="footway" />
