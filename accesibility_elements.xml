@@ -1,48 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 	author="LorenzoStucchi" 
-	version="0.0.1" 
+	version="0.1.0" 
 	shortdescription="Preset to be used to map the elements of accesibility" 
-	it.shortdescription=""
+	it.shortdescription="Preset per mappare l'accessibilità"
 	description="Set of preset to be used to map the elements of accesibility, used inside the ViaLibera?! project" 
-	it.description=""
+	it.description="Insieme di preset per mappare l'accessibilità utilizzati nel progetto ViaLibera?!"
 	link="https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera"
-	icon="">
+	icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
 
 <!-- Group of elements for accessibility -->
-<group name="Accesibility elements">
-
-	<!-- Schema for sidewalk -->
-	<group name="Sidewalk" it.name="Marciapiede" icon="">
-		<item name="Sidewalk" it.name="Marciapiede" type="way" icon="">
-			<label text="Insert the elements for a sidewalk" it.text="Inserire gli elementi per un marciapiede" />
-			<space />
-			<key key="highway" value="footway" />
-			<key key="footway" value="sidewalk" />
-			<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-				<list_entry value="asphalt" it.display_value="Asfalto"/>
-				<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-				<list_entry value="sett" it.display_value="San pietrini"/>
-			</combo>
-			<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-				<list_entry value="excellent" it.display_value="Eccellente"/>
-				<list_entry value="good" it.display_value="Buona"/>
-				<list_entry value="intermediate" it.display_value="Intermedia"/>
-				<list_entry value="bad" it.display_value="Cattiva"/>
-			</combo>
-			<text key="width" text="sidewalk width(e.g. 1.2 m)" it.text="Larghezza del marciapiede(e.s. 1.2 m)"  />
-			<text key="incline" text="sidewalk inlination(e.g. 2.5%)" it.text="Inclinazione del marciapiede(e.s. 2.5%)"  />
-			<text key="incline:across" text="sidewalk inclination across(e.g. 2.5%)" it.text="Inclinazione trasversale del marciapiede (e.s. 2.5%)"  />
-			<text key="height" text="sidewalk height(e.g. 1.2 m)" it.text="Larghezza del marciapiede(e.s. 1.2 m)"  />
-			<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
-			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
-		</item>
-	</group>
+<group name="Accesibility elements" it.name="Elementi di accessibilità" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
 
 	<!-- Schema for crossing -->
-	<group name="Crossing" it.name="Attraversamenti" icon="">
+	<group name="Crossing" it.name="Attraversamenti" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/crossing.png">
 		<!-- Pedestrian crossing -->
-		<item name="Pedestrian crossing" it.name="Attraversamento pedonale" type="node,way" icon="">
+		<item name="Pedestrian crossing" it.name="Attraversamento pedonale" type="node,way" icon="presets/transport/way/dedicated_footway.svg">
 			<label text="Insert the elements for a pedestrian crossing" it.text="Inserire gli elementi per un attraversamento pedonale" />
 			<space />
 			<key key="highway" value="footway" />
@@ -63,15 +36,15 @@
 				<list_entry value="intermediate" it.display_value="Intermedia"/>
 				<list_entry value="bad" it.display_value="Cattiva"/>
 			</combo>
-			<text key="width" text="crossing width(e.g. 1.2 m)" it.text="Larghezza dell'attraversamento(e.s. 1.2 m)"  />
-			<text key="incline" text="crossing inlination(e.g. 2.5%)" it.text="Inclinazione dell'attraversamento(e.s. 2.5%)"  />
-			<text key="incline:across" text="crossing inclination across(e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (e.s. 2.5%)"  />
+			<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
+			<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
+			<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
 			<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
 			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 		</item>
 
 		<!-- Bicycle crossing -->
-		<item name="Bicycle crossing" it.name="Attraversamento ciclabile" type="node,way" icon="">
+		<item name="Bicycle crossing" it.name="Attraversamento ciclabile" type="node,way" icon="presets/transport/way/dedicated_cycleway.svg">
 			<label text="Insert the elements for a bicycle crossing" it.text="Inserire gli elementi per un attraversamento ciclabile" />
 			<space />
 			<key key="highway" value="cycleway" />
@@ -92,15 +65,15 @@
 				<list_entry value="intermediate" it.display_value="Intermedia"/>
 				<list_entry value="bad" it.display_value="Cattiva"/>
 			</combo>
-			<text key="width" text="crossing width(e.g. 1.2 m)" it.text="Larghezza dell'attraversamento(e.s. 1.2 m)"  />
-			<text key="incline" text="crossing inlination(e.g. 2.5%)" it.text="Inclinazione dell'attraversamento(e.s. 2.5%)"  />
-			<text key="incline:across" text="crossing inclination across(e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (e.s. 2.5%)"  />
+			<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
+			<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
+			<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
 			<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
 			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 		</item>
 
 		<!-- Shared crossing -->
-		<item name="Shared crossing" it.name="Attraversamento condiviso" type="node,way" icon="">
+		<item name="Shared crossing" it.name="Attraversamento condiviso" type="node,way" icon="presets/transport/way/combined_foot_cycleway.svg">
 			<label text="Insert the elements for a shared crossing" it.text="Inserire gli elementi per un attraversamento condiviso" />
 			<space />
 			<key key="highway" value="path" />
@@ -124,21 +97,22 @@
 				<list_entry value="intermediate" it.display_value="Intermedia"/>
 				<list_entry value="bad" it.display_value="Cattiva"/>
 			</combo>
-			<text key="width" text="crossing width(e.g. 1.2 m)" it.text="Larghezza dell'attraversamento(e.s. 1.2 m)"  />
-			<text key="incline" text="crossing inlination(e.g. 2.5%)" it.text="Inclinazione dell'attraversamento(e.s. 2.5%)"  />
-			<text key="incline:across" text="crossing inclination across(e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (e.s. 2.5%)"  />
+			<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
+			<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
+			<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
 			<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
 			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 		</item>
 
-		<!-- Traffic line crossing -->
-		<item name="Traffic line crossing" it.name="Attraversamento semaforico" type="node,way" icon="">
+		<!-- Chunk for traffic lights crossing -->
+		<item id="traffic_signals" name="Traffic lights crossing" it.name="Attraversamento semaforico" type="node,way" icon="presets/vehicle/traffic_signals.svg">
 			<label text="Insert the plus elements for a traffic line crossing" it.text="Inserire gli elementi aggiuntivo per un attraversamento semaforico" />
 			<space />
 			<key key="crossing" value="traffic_signals" />
 			<check key="traffic_signals:sound" text="Presence of sound emitter" it.text="Presenza di cicalino" />
 			<check key="button_operated" text="Presence of button to start sound emitter" it.text="Presenza di bottone per attivare il cicalino" />
 		</item>
+
 	</group>
 
 	<!-- Schema for kerbs -->
@@ -159,9 +133,9 @@
 				<list_entry value="intermediate" it.display_value="Intermedia"/>
 				<list_entry value="bad" it.display_value="Cattiva"/>
 			</combo>
-			<text key="width" text="kerb width(e.g. 1.2 m)" it.text="Larghezza del cordolo(e.s. 1.2 m)"  />
-			<text key="kerb:height" text="kerb height(e.g. 0.02 m)" it.text="Altezza del cordolo(e.s. 0.02 m)"  />
-			<text key="incline" text="kerb inlination(e.g. 2.5%)" it.text="Inclinazione del cordolo(e.s. 2.5%)"  />
+			<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
+			<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
+			<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
 			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 		</item>
 
@@ -181,9 +155,9 @@
 				<list_entry value="intermediate" it.display_value="Intermedia"/>
 				<list_entry value="bad" it.display_value="Cattiva"/>
 			</combo>
-			<text key="width" text="kerb width(e.g. 1.2 m)" it.text="Larghezza del cordolo(e.s. 1.2 m)"  />
-			<text key="kerb:height" text="kerb height(e.g. 0.02 m)" it.text="Altezza del cordolo(e.s. 0.02 m)"  />
-			<text key="incline" text="kerb inlination(e.g. 2.5%)" it.text="Inclinazione del cordolo(e.s. 2.5%)"  />
+			<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
+			<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
+			<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
 			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 		</item>
 
@@ -203,12 +177,151 @@
 				<list_entry value="intermediate" it.display_value="Intermedia"/>
 				<list_entry value="bad" it.display_value="Cattiva"/>
 			</combo>
-			<text key="width" text="kerb width(e.g. 1.2 m)" it.text="Larghezza del cordolo(e.s. 1.2 m)"  />
-			<text key="kerb:height" text="kerb height(e.g. 0.02 m)" it.text="Altezza del cordolo(e.s. 0.02 m)"  />
-			<text key="incline" text="kerb inlination(e.g. 2.5%)" it.text="Inclinazione del cordolo(e.s. 2.5%)"  />
+			<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
+			<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
+			<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
 			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 		</item>
 	</group>
+
+	<!-- Schema for barriers -->
+	<group name="Barriers" it.name="Barriere" icon="presets/barrier/wall.svg">
+
+		<!-- Schema for traffic sign -->
+		<item name="Traffic sign" it.name="Segnaletica verticale" type="node" icon="presets/vehicle/restriction/stop.svg">
+			<label text="Insert the elements for a drain" it.text="Inserire gli elementi per una caditoia" />
+			<space />
+			<text key="traffic_sign" text="Type of traffic sign" it.text="Tipo di segnaeltica verticale" />
+			<key key="support" value="pole"/>
+			<text key="height" text="Height (e.g. 2.2 m)" it.text="Altezza (es. 2.2 m)"  />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+			<check key="obstacle:foot" text="Obstacle for pedestrian" it.text="Ostacolo per pedoni" />
+			<link wiki="IT:Road_signs_in_Italy"/>
+		</item>
+
+		<!-- Schema for drain -->
+		<item name="Drain" it.name="Caditoia, tombino" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/drain.svg">
+			<label text="Insert the elements for a drain" it.text="Inserire gli elementi per una caditoia" />
+			<space />
+			<key key="manhole" value="drain" />
+			<text key="obstacle:description" text="Description of the drain, possible to insert the width of the holes (e.g. 0.02 m)" it.text="Descrizione della caditoia, possibile inserire la larghezza dei fori (es. 0.02 m)"  />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for planter -->
+		<item name="Planter" it.name="Fioriera" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/planter.svg">
+			<label text="Insert the elements for a planter" it.text="Inserire gli elementi per una fioriera" />
+			<space />
+			<key key="man_made" value="planter" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for block -->
+		<item name="Block barrier" it.name="Panettone" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/block.svg">
+			<label text="Insert the elements for a block barrier" it.text="Inserire gli elementi per un panettone" />
+			<space />
+			<key key="barrier" value="block" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for bollard -->
+		<item name="Bollard barrier" it.name="Paletto" type="node" icon="presets/barrier/bollard.svg">
+			<label text="Insert the elements for a bollard" it.text="Inserire gli elementi per un paletto" />
+			<space />
+			<key key="barrier" value="bollard" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for tree -->
+		<item name="Tree" it.name="Albero" type="node" icon="presets/landmark/trees.svg">
+			<label text="Insert the elements for a tree" it.text="Inserire gli elementi per un albero" />
+			<space />
+			<key key="natural" value="tree" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for waste basket -->
+		<item name="Waste basket" it.name="Cestino" type="node" icon="presets/service/recycling/waste_basket.svg">
+			<label text="Insert the elements for a waste basket" it.text="Inserire gli elementi per un cestino" />
+			<space />
+			<key key="amenity" value="waste_basket" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for fire hydrant -->
+		<item name="Fire hydrant" it.name="Idrante" type="node" icon="presets/service/fire_hydrant.svg">
+			<label text="Insert the elements for a hydrant" it.text="Inserire gli elementi per un idrante" />
+			<space />
+			<key key="emergency" value="fire_hydrant" />
+			<combo key="fire_hydrant:type" text="Fire hydrant type" it.text="Tipo di idrante">
+				<list_entry value="pillar" it.display_value="Colonnina"/>
+				<list_entry value="wall" it.display_value="A muro"/>
+				<list_entry value="underground" it.display_value="Sottoterra"/>
+			</combo>
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for street lamp -->
+		<item name="Street lamp" it.name="Lampione" type="node" icon="presets/misc/streetlamp.svg">
+			<label text="Insert the elements for a street lamp" it.text="Inserire gli elementi per un lampione" />
+			<space />
+			<key key="highway" value="street_lamp" />
+			<key key="support" value="pole" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for telecom cabin -->
+		<item name="Telecom cabin" it.name="Cabina telefonica" type="node" icon="presets/misc/street_cabinet.svg">
+			<label text="Insert the elements for a telecom cabin" it.text="Inserire gli elementi per una cabina telefonica" />
+			<space />
+			<key key="man_made" value="street_cabin" />
+			<key key="street_cabin" value="telecom" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+		<!-- Schema for hole -->
+		<item name="Big hole" it.name="Buca profonda isolata" type="way" icon="">
+			<label text="Insert a big hole" it.text="Inserire una buca profonda isolata" />
+			<space />
+			<key key="smoothness" value="very_bad" />
+			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
+		</item>
+
+	</group>
+
+	<!-- Schema for parking for wheelchair users -->
+	<item name="Wheelchair parking" it.name="Parcheggi per disabili" type="node,closedway" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/wheelchair_parking.png">
+		<label text="Insert the elements for a wheelchair parking" it.text="Inserire gli elementi per un parcheggio per disabili riservati" />
+		<space />
+		<key key="amenity" value="parking_space" />
+		<key key="parking_space" value="disabled" />
+		<text key="capcity:disabled" text="Capacity for wheelchair (e.g. 12)" it.text="Capacità parcheggi riservati (es. 12)"  />
+	</item>
+
+	<!-- Schema for sidewalk -->
+	<item name="Sidewalks" it.name="Marciapiede" type="way" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/sidewalk.svg">
+		<label text="Insert the elements for a sidewalk" it.text="Inserire gli elementi per un marciapiede" />
+		<space />
+		<key key="highway" value="footway" />
+		<key key="footway" value="sidewalk" />
+		<combo key="surface" text="Surface material" it.text="Materiale della superficie">
+			<list_entry value="asphalt" it.display_value="Asfalto"/>
+			<list_entry value="paving_stones" it.display_value="Pavimentato"/>
+			<list_entry value="sett" it.display_value="San pietrini"/>
+		</combo>
+		<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
+			<list_entry value="excellent" it.display_value="Eccellente"/>
+			<list_entry value="good" it.display_value="Buona"/>
+			<list_entry value="intermediate" it.display_value="Intermedia"/>
+			<list_entry value="bad" it.display_value="Cattiva"/>
+		</combo>
+		<text key="width" text="sidewalk width (e.g. 1.2 m)" it.text="Larghezza del marciapiede (es. 1.2 m)"  />
+		<text key="incline" text="sidewalk inlination (e.g. 2.5%)" it.text="Inclinazione del marciapiede (es. 2.5%)"  />
+		<text key="incline:across" text="sidewalk inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale del marciapiede (es. 2.5%)"  />
+		<text key="height" text="sidewalk height (e.g. 1.2 m)" it.text="Larghezza del marciapiede (es. 1.2 m)"  />
+		<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
+		<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+	</item>
 
 </group>
 </presets>

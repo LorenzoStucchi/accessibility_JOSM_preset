@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	 id="kerb" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.5 34.5"
+	 style="enable-background:new 0 0 34.5 34.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFED14;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M17,3c6.2-0.1,11.3,4.4,11.5,10.1l1.2,14.2c-0.4,2.5-3.4,3.9-12.3,4.2c-7,0-12.5-1.6-12.5-4L5.4,14
+	C5.5,7.8,10.7,2.8,17,3"/>
+</svg>
