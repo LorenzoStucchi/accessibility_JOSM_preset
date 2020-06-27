@@ -295,7 +295,7 @@
 		<space />
 		<key key="amenity" value="parking_space" />
 		<key key="parking_space" value="disabled" />
-		<text key="capcity:disabled" text="Capacity for wheelchair (e.g. 12)" it.text="Capacità parcheggi riservati (es. 12)"  />
+		<text key="capacity:disabled" text="Capacity for wheelchair (e.g. 12)" it.text="Capacità parcheggi riservati (es. 12)"  />
 	</item>
 
 	<!-- Schema for sidewalk -->
