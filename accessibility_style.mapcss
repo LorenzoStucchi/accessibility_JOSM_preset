@@ -61,3 +61,17 @@ node|z16-[wheelchair = no]::wheelchair, area|z16-[wheelchair = no]::wheelchair{
 	icon-width: 15;
 	icon-offset-x: 15;
 }
+
+way|z14-[footway = sidewalk]{
+	z-index: 10;
+	color: dodgerblue;
+	width: 3;
+	dashes: 6, 2;
+}
+
+way|z14-[footway = crossing], way|z14-[cycleway = crossing], way|z14-[path = crossing]{
+	z-index: 10;
+	color: darkblue;
+	width: 3;
+	dashes: 6, 2;
+}
