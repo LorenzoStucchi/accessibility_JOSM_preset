@@ -8,60 +8,64 @@ meta{
     watch-modified: true;
 }
 
+ /* Style preset for kerbs */
 node|z16-[kerb = flush][tactile_paving != yes]{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_green.png";
 	icon-width: 15;
 }
-
 node|z16-[kerb = flush][tactile_paving = yes]{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_lime.png";
 	icon-width: 15;
 }
-
 node|z16-[kerb = lowered]{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_orange.png";
 	icon-width: 15;
 }
-
 node|z16-[kerb = raised]{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_red.png";
 	icon-width: 15;
 }
 
+ /* Style preset for barriers obstacle for wheelchair */
 node|z16-[obstacle:wheelchair = yes]::obstacle{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/danger_wheelchair.png"; 
 	icon-width: 15;
 	icon-opacity: 0.6;
 }
 
+ /* Style preset for parking space reserved */
 *|z16-[amenity = parking_space][disabled = designated]{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/wheelchair_parking.png";
 	icon-width: 12;
 }
-
 *|z16-[amenity = parking_space][parking_space = disabled]{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/wheelchair_parking.png";
 	icon-width: 12;
 }
 
+ /* Style preset for wheelchair accessibility */
 node|z16-[wheelchair = yes]::wheelchair, area|z16-[wheelchair = yes]::wheelchair{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_green.png";
-	icon-width: 20;
+	icon-width: 15;
+	icon-offset-x: -20;
+}
+node|z16-[wheelchair = limited]::wheelchair, area|z16-[wheelchair = limited]::wheelchair{
+	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_orange.png";
+	icon-width: 15;
+	icon-offset-x: -20;
+}
+node|z16-[wheelchair = half]::wheelchair, area|z16-[wheelchair = half]::wheelchair{
+	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_orange.png";
+	icon-width: 15;
+	icon-offset-x: -20;
+}
+node|z16-[wheelchair = no]::wheelchair, area|z16-[wheelchair = no]::wheelchair{
+	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_red.png";
+	icon-width: 15;
 	icon-offset-x: -20;
 }
 
-node|z16-[wheelchair = limited]::wheelchair, area|z16-[wheelchair = limited]::wheelchair{
-	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_orange.png";
-	icon-width: 10;
-	icon-offset-x: 15;
-}
-
-node|z16-[wheelchair = no]::wheelchair, area|z16-[wheelchair = no]::wheelchair{
-	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_red.png";
-	icon-width: 10;
-	icon-offset-x: 15;
-}
-
+ /* Style preset for sidewalk */
 way|z14-[footway = sidewalk]{
 	z-index: 10;
 	color: dodgerblue;
@@ -69,6 +73,7 @@ way|z14-[footway = sidewalk]{
 	dashes: 6, 2;
 }
 
+ /* Style preset for crossing */
 way|z14-[footway = crossing], way|z14-[cycleway = crossing], way|z14-[path = crossing]{
 	z-index: 10;
 	color: darkblue;
