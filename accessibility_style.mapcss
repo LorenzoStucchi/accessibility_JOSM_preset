@@ -1,7 +1,7 @@
 meta{
     title: "Modified objects";
     description: "Highlight modified objects";
-    version: "0.0.1";
+    version: "0.1.0";
     author: "LorenzoStucchi";
     link: "https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera";
     icon: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png";
@@ -52,13 +52,13 @@ node|z16-[wheelchair = yes]::wheelchair, area|z16-[wheelchair = yes]::wheelchair
 
 node|z16-[wheelchair = limited]::wheelchair, area|z16-[wheelchair = limited]::wheelchair{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_orange.png";
-	icon-width: 15;
+	icon-width: 10;
 	icon-offset-x: 15;
 }
 
 node|z16-[wheelchair = no]::wheelchair, area|z16-[wheelchair = no]::wheelchair{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_red.png";
-	icon-width: 15;
+	icon-width: 10;
 	icon-offset-x: 15;
 }
 
