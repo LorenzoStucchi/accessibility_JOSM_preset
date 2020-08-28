@@ -1,6 +1,6 @@
 # Mapping accessibility with JOSM
 
-The tagging schema used in the preset and the style is expalined in the [OSM wiki page](https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera) ![(it)](https://blog.openstreetmap.de/wp-uploads/2016/12/it.svg) about the project ViaLibera?!
+The tagging schema used in the preset and the style is expalined in the [OSM wiki page](https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera) about the project ViaLibera?!
 
 ## Preset
 
