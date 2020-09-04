@@ -9,6 +9,7 @@
 	link="https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera"
 	icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
 
+<!-- Chunk for surface material and smoothness -->
 <chunk id="material_smoothness">
 	<combo key="surface" text="Surface material" it.text="Materiale della superficie">
 		<list_entry value="asphalt" it.display_value="Asfalto"/>
@@ -23,6 +24,7 @@
 	</combo>
 </chunk>
 
+<!-- Chunk for crossings -->
 <chunk id="crossing_tags">
 	<combo key="crossing" text="Crossing type" it.text="Tipo di attraversamento">
 		<list_entry value="uncontrolled" it.display_value="Non controllato"/>
@@ -38,6 +40,7 @@
 	<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 </chunk>
 
+<!-- Chunk for kerbs -->
 <chunk id="kerb_tags">
 	<reference ref="material_smoothness"/>
 	<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
@@ -81,7 +84,7 @@
 			<reference ref="crossing_tags"/>
 		</item>
 
-		<!-- Chunk for traffic lights crossing -->
+		<!-- Traffic lights crossing -->
 		<item id="traffic_signals" name="Traffic lights crossing" it.name="Attraversamento semaforico" type="node,way" icon="presets/vehicle/traffic_signals.svg">
 			<label text="Insert the plus elements for a traffic line crossing" it.text="Inserire gli elementi aggiuntivo per un attraversamento semaforico" />
 			<space />
