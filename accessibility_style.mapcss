@@ -1,7 +1,7 @@
 meta{
     title: "Modified objects";
     description: "Highlight modified objects";
-    version: "0.1.1";
+    version: "1.0.0";
     author: "LorenzoStucchi";
     link: "https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera";
     icon: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png";
@@ -86,7 +86,7 @@ node|z14-[footway = crossing]{
 	icon-width: 15;
 }
 
-node|z14-[cycleway = crossin]{
+node|z14-[cycleway = crossing]{
 	icon-image: "presets/transport/way/dedicated_cycleway.svg";
 	icon-width: 15;
 }

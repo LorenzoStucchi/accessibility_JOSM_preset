@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 	author="LorenzoStucchi" 
-	version="0.1.0" 
+	version="1.[[revision]]_[[date]]" 
 	shortdescription="Preset to be used to map the elements of accesibility" 
 	it.shortdescription="Preset per mappare l'accessibilità"
 	description="Set of preset to be used to map the elements of accesibility, used inside the ViaLibera?! project" 
 	it.description="Insieme di preset per mappare l'accessibilità utilizzati nel progetto ViaLibera?!"
 	link="https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera"
 	icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
+
+<chunk id="material_smoothness">
+	<combo key="surface" text="Surface material" it.text="Materiale della superficie">
+		<list_entry value="asphalt" it.display_value="Asfalto"/>
+		<list_entry value="paving_stones" it.display_value="Pavimentato"/>
+		<list_entry value="sett" it.display_value="San pietrini"/>
+	</combo>
+	<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
+		<list_entry value="excellent" it.display_value="Eccellente"/>
+		<list_entry value="good" it.display_value="Buona"/>
+		<list_entry value="intermediate" it.display_value="Intermedia"/>
+		<list_entry value="bad" it.display_value="Cattiva"/>
+	</combo>
+</chunk>
+
+<chunk id="crossing_tags">
+	<combo key="crossing" text="Crossing type" it.text="Tipo di attraversamento">
+		<list_entry value="uncontrolled" it.display_value="Non controllato"/>
+		<list_entry value="unmarked" it.display_value="Non segnato"/>
+		<list_entry value="traffic_signals" it.display_value="Semaforico"/>
+	</combo>
+	<reference ref="material_smoothness"/>
+	<space />
+	<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
+	<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
+	<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
+	<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
+	<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+</chunk>
+
+<chunk id="kerb_tags">
+	<reference ref="material_smoothness"/>
+	<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
+	<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
+	<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
+	<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+</chunk>
 
 <!-- Group of elements for accessibility -->
 <group name="Accesibility elements" it.name="Elementi di accessibilità" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
@@ -20,27 +57,7 @@
 			<space />
 			<key key="highway" value="footway" />
 			<key key="footway" value="crossing" />
-			<combo key="crossing" text="Crossing type" it.text="Tipo di attraversamento">
-				<list_entry value="uncontrolled" it.display_value="Non controllato"/>
-				<list_entry value="unmarked" it.display_value="Non segnato"/>
-				<list_entry value="traffic_signals" it.display_value="Semaforico"/>
-			</combo>
-			<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-				<list_entry value="asphalt" it.display_value="Asfalto"/>
-				<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-				<list_entry value="sett" it.display_value="San pietrini"/>
-			</combo>
-			<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-				<list_entry value="excellent" it.display_value="Eccellente"/>
-				<list_entry value="good" it.display_value="Buona"/>
-				<list_entry value="intermediate" it.display_value="Intermedia"/>
-				<list_entry value="bad" it.display_value="Cattiva"/>
-			</combo>
-			<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
-			<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
-			<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
-			<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
-			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+			<reference ref="crossing_tags"/>
 		</item>
 
 		<!-- Bicycle crossing -->
@@ -49,27 +66,7 @@
 			<space />
 			<key key="highway" value="cycleway" />
 			<key key="cycleway" value="crossing" />
-			<combo key="crossing" text="Crossing type" it.text="Tipo di attraversamento">
-				<list_entry value="uncontrolled" it.display_value="Non controllato"/>
-				<list_entry value="unmarked" it.display_value="Non segnato"/>
-				<list_entry value="traffic_signals" it.display_value="Semaforico"/>
-			</combo>
-			<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-				<list_entry value="asphalt" it.display_value="Asfalto"/>
-				<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-				<list_entry value="sett" it.display_value="San pietrini"/>
-			</combo>
-			<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-				<list_entry value="excellent" it.display_value="Eccellente"/>
-				<list_entry value="good" it.display_value="Buona"/>
-				<list_entry value="intermediate" it.display_value="Intermedia"/>
-				<list_entry value="bad" it.display_value="Cattiva"/>
-			</combo>
-			<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
-			<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
-			<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
-			<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
-			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+			<reference ref="crossing_tags"/>
 		</item>
 
 		<!-- Shared crossing -->
@@ -81,27 +78,7 @@
 			<key key="foot" value="designed" />
 			<key key="bicycle" value="designed" />
 			<key key="segregated" value="no" />
-			<combo key="crossing" text="Crossing type" it.text="Tipo di attraversamento">
-				<list_entry value="uncontrolled" it.display_value="Non controllato"/>
-				<list_entry value="unmarked" it.display_value="Non segnato"/>
-				<list_entry value="traffic_signals" it.display_value="Semaforico"/>
-			</combo>
-			<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-				<list_entry value="asphalt" it.display_value="Asfalto"/>
-				<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-				<list_entry value="sett" it.display_value="San pietrini"/>
-			</combo>
-			<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-				<list_entry value="excellent" it.display_value="Eccellente"/>
-				<list_entry value="good" it.display_value="Buona"/>
-				<list_entry value="intermediate" it.display_value="Intermedia"/>
-				<list_entry value="bad" it.display_value="Cattiva"/>
-			</combo>
-			<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
-			<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
-			<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
-			<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
-			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+			<reference ref="crossing_tags"/>
 		</item>
 
 		<!-- Chunk for traffic lights crossing -->
@@ -122,21 +99,7 @@
 			<label text="Insert the elements for a raised kerb" it.text="Inserire gli elementi per un cordolo rialzato" />
 			<space />
 			<key key="kerb" value="raised" />
-			<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-				<list_entry value="asphalt" it.display_value="Asfalto"/>
-				<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-				<list_entry value="sett" it.display_value="San pietrini"/>
-			</combo>
-			<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-				<list_entry value="excellent" it.display_value="Eccellente"/>
-				<list_entry value="good" it.display_value="Buona"/>
-				<list_entry value="intermediate" it.display_value="Intermedia"/>
-				<list_entry value="bad" it.display_value="Cattiva"/>
-			</combo>
-			<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
-			<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
-			<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
-			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+			<reference ref="kerb_tags"/>
 		</item>
 
 		<!-- Schema for lowered kerb -->
@@ -144,21 +107,7 @@
 			<label text="Insert the elements for a lowered kerb" it.text="Inserire gli elementi per un cordolo ribassato" />
 			<space />
 			<key key="kerb" value="lowered" />
-			<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-				<list_entry value="asphalt" it.display_value="Asfalto"/>
-				<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-				<list_entry value="sett" it.display_value="San pietrini"/>
-			</combo>
-			<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-				<list_entry value="excellent" it.display_value="Eccellente"/>
-				<list_entry value="good" it.display_value="Buona"/>
-				<list_entry value="intermediate" it.display_value="Intermedia"/>
-				<list_entry value="bad" it.display_value="Cattiva"/>
-			</combo>
-			<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
-			<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
-			<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
-			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+			<reference ref="kerb_tags"/>
 		</item>
 
 		<!-- Schema for flush kerb -->
@@ -166,21 +115,7 @@
 			<label text="Insert the elements for a flush kerb" it.text="Inserire gli elementi per un cordolo a livello" />
 			<space />
 			<key key="kerb" value="flush" />
-			<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-				<list_entry value="asphalt" it.display_value="Asfalto"/>
-				<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-				<list_entry value="sett" it.display_value="San pietrini"/>
-			</combo>
-			<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-				<list_entry value="excellent" it.display_value="Eccellente"/>
-				<list_entry value="good" it.display_value="Buona"/>
-				<list_entry value="intermediate" it.display_value="Intermedia"/>
-				<list_entry value="bad" it.display_value="Cattiva"/>
-			</combo>
-			<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
-			<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
-			<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
-			<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+			<reference ref="kerb_tags"/>
 		</item>
 	</group>
 
@@ -191,7 +126,7 @@
 		<item name="Traffic sign" it.name="Segnaletica verticale" type="node" icon="presets/vehicle/restriction/stop.svg">
 			<label text="Insert the elements for a drain" it.text="Inserire gli elementi per una caditoia" />
 			<space />
-			<text key="traffic_sign" text="Type of traffic sign" it.text="Tipo di segnaeltica verticale" />
+			<text key="traffic_sign" text="Type of traffic sign" it.text="Tipo di segnaletica verticale" />
 			<key key="support" value="pole"/>
 			<text key="height" text="Height (e.g. 2.2 m)" it.text="Altezza (es. 2.2 m)"  />
 			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
@@ -304,21 +239,12 @@
 		<space />
 		<key key="highway" value="footway" />
 		<key key="footway" value="sidewalk" />
-		<combo key="surface" text="Surface material" it.text="Materiale della superficie">
-			<list_entry value="asphalt" it.display_value="Asfalto"/>
-			<list_entry value="paving_stones" it.display_value="Pavimentato"/>
-			<list_entry value="sett" it.display_value="San pietrini"/>
-		</combo>
-		<combo key="smoothness" text="Surface smoothness" it.text="Levigatezza della superficie">
-			<list_entry value="excellent" it.display_value="Eccellente"/>
-			<list_entry value="good" it.display_value="Buona"/>
-			<list_entry value="intermediate" it.display_value="Intermedia"/>
-			<list_entry value="bad" it.display_value="Cattiva"/>
-		</combo>
+		<reference ref="material_smoothness" />
 		<text key="width" text="sidewalk width (e.g. 1.2 m)" it.text="Larghezza del marciapiede (es. 1.2 m)"  />
+		<space />
 		<text key="incline" text="sidewalk inlination (e.g. 2.5%)" it.text="Inclinazione del marciapiede (es. 2.5%)"  />
 		<text key="incline:across" text="sidewalk inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale del marciapiede (es. 2.5%)"  />
-		<text key="height" text="sidewalk height (e.g. 1.2 m)" it.text="Larghezza del marciapiede (es. 1.2 m)"  />
+		<text key="height" text="sidewalk height (e.g. 1.2 m)" it.text="Altezza del marciapiede (es. 1.2 m)"  />
 		<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
 		<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 	</item>
