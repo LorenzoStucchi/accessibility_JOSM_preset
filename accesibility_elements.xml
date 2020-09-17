@@ -37,7 +37,7 @@
 	<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
 	<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
 	<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
-	<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+	<check key="tactile_paving" text="Presence of tactile paving" it.text="Presenza di pavimento tattile" />
 </chunk>
 
 <!-- Chunk for kerbs -->
@@ -90,7 +90,7 @@
 			<space />
 			<key key="crossing" value="traffic_signals" />
 			<check key="traffic_signals:sound" text="Presence of sound emitter" it.text="Presenza di cicalino" />
-			<check key="button_operated" text="Presence of button to start sound emitter" it.text="Presenza di bottone per attivare il cicalino" />
+			<check key="button_operated" text="Presence of button to start" it.text="Presenza di bottone" />
 		</item>
 
 	</group>
@@ -249,7 +249,7 @@
 		<text key="incline:across" text="sidewalk inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale del marciapiede (es. 2.5%)"  />
 		<text key="height" text="sidewalk height (e.g. 1.2 m)" it.text="Altezza del marciapiede (es. 1.2 m)"  />
 		<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
-		<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+		<check key="tactile_paving" text="Presence of tactile paving" it.text="Presenza di pavimento tattile" />
 	</item>
 
 </group>
