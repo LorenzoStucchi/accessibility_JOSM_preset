@@ -21,6 +21,7 @@
 		<list_entry value="good" it.display_value="Buona"/>
 		<list_entry value="intermediate" it.display_value="Intermedia"/>
 		<list_entry value="bad" it.display_value="Cattiva"/>
+		<list_entry value="very_bad" it.display_value="Pessima"/>
 	</combo>
 </chunk>
 
@@ -55,7 +56,7 @@
 	<!-- Schema for crossing -->
 	<group name="Crossing" it.name="Attraversamenti" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/crossing.png">
 		<!-- Pedestrian crossing -->
-		<item name="Pedestrian crossing" it.name="Attraversamento pedonale" type="node,way" icon="presets/transport/way/dedicated_footway.svg">
+		<item name="Pedestrian crossing" it.name="Attraversamento pedonale" type="way" icon="presets/transport/way/dedicated_footway.svg">
 			<label text="Insert the elements for a pedestrian crossing" it.text="Inserire gli elementi per un attraversamento pedonale" />
 			<space />
 			<key key="highway" value="footway" />
@@ -64,7 +65,7 @@
 		</item>
 
 		<!-- Bicycle crossing -->
-		<item name="Bicycle crossing" it.name="Attraversamento ciclabile" type="node,way" icon="presets/transport/way/dedicated_cycleway.svg">
+		<item name="Bicycle crossing" it.name="Attraversamento ciclabile" type="way" icon="presets/transport/way/dedicated_cycleway.svg">
 			<label text="Insert the elements for a bicycle crossing" it.text="Inserire gli elementi per un attraversamento ciclabile" />
 			<space />
 			<key key="highway" value="cycleway" />
@@ -73,7 +74,7 @@
 		</item>
 
 		<!-- Shared crossing -->
-		<item name="Shared crossing" it.name="Attraversamento condiviso" type="node,way" icon="presets/transport/way/combined_foot_cycleway.svg">
+		<item name="Shared crossing" it.name="Attraversamento condiviso" type="way" icon="presets/transport/way/combined_foot_cycleway.svg">
 			<label text="Insert the elements for a shared crossing" it.text="Inserire gli elementi per un attraversamento condiviso" />
 			<space />
 			<key key="highway" value="path" />
@@ -92,6 +93,18 @@
 			<check key="traffic_signals:sound" text="Presence of sound emitter" it.text="Presenza di cicalino" />
 			<check key="button_operated" text="Presence of button to start" it.text="Presenza di bottone" />
 		</item>
+
+		<!-- Crossing node -->
+		<group name="Crossing nodes" it.name="Nodi attraversamenti" icon="presets/vehicle/crossing_ref_zebra.svg">
+			<item id="highway_crossing_node" name="Crossing on highways" it.name="Attraversamenti su strade" type="node" icon="presets/vehicle/crossing.svg">
+				<key key="highway" value="crossing" />
+			</item>
+
+			<item id="railway_crossing_node" name="Crossing on railway" it.name="Attraversamenti su rotaie" type="node" icon="presets/transport/railway/crossing.svg">
+				<key key="railway" value="crossing" />
+			</item>
+			
+		</group> 
 
 	</group>
 
