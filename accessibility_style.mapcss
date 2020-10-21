@@ -1,9 +1,9 @@
 meta{
-    title: "Modified objects";
-    description: "Highlight modified objects";
-    version: "1.0.0";
+    title: "Mapping Accessibility";
+    description: "Mappatura dell'accessibilità";
+    version: "1.[[revision]]_[[date]]";
     author: "LorenzoStucchi";
-    link: "https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera";
+    link: "https://wiki.openstreetmap.org/wiki/ViaLibera";
     icon: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png";
     watch-modified: true;
 }
