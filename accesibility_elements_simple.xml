@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
+	author="LorenzoStucchi" 
+	version="1.[[revision]]_[[date]]" 
+	shortdescription="Simple Mapping Accessibility" 
+	it.shortdescription="Mappatura dell'accessibilità Semplice"
+	link="https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera"
+	icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
+
+<group name="Simple accesibility elements" it.name="Semplice elementi di accessibilità" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
+	<item name="Sidewalks" it.name="Marciapiede" type="way" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/sidewalk.png">
+		<key key="highway" value="footway" />
+		<key key="footway" value="sidewalk" />
+	</item>
+
+	<item name="Pedestrian crossing" it.name="Attraversamento pedonale" type="way" icon="presets/transport/way/dedicated_footway.svg">
+		<key key="highway" value="footway" />
+		<key key="footway" value="crossing" />
+	</item>
+
+	<item name="Bicycle crossing" it.name="Attraversamento ciclabile" type="way" icon="presets/transport/way/dedicated_cycleway.svg">
+		<key key="highway" value="cycleway" />
+		<key key="cycleway" value="crossing" />
+	</item>
+
+	<item name="Shared crossing" it.name="Attraversamento condiviso" type="way" icon="presets/transport/way/combined_foot_cycleway.svg">
+		<key key="highway" value="path" />
+		<key key="path" value="crossing" />
+		<key key="foot" value="designed" />
+		<key key="bicycle" value="designed" />
+		<key key="segregated" value="no" />
+	</item>
+
+	<item id="highway_crossing_node" name="(Node) Crossing on highways" it.name="(Nodo) Attraversamenti su strade" type="node" icon="presets/vehicle/crossing.svg">
+		<key key="highway" value="crossing" />
+	</item>
+			
+	<item id="railway_crossing_node" name="(Node) Crossing on railway" it.name="(Nodo) Attraversamenti su rotaie" type="node" icon="presets/transport/railway/crossing.svg">
+		<key key="railway" value="crossing" />
+	</item>
+</group>
+</presets>
