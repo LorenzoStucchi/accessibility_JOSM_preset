@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
 	author="LorenzoStucchi" 
-	version="1.[[revision]]_[[date]]" 
+	version="2.[[revision]]_[[date]]" 
 	shortdescription="Simple Mapping Accessibility" 
 	it.shortdescription="Mappatura dell'accessibilità Semplice"
-	link="https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera"
+	link="https://wiki.openstreetmap.org/wiki/ViaLibera"
 	icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
 
-<group name="Simple accesibility elements" it.name="Semplice elementi di accessibilità" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png">
+<group name="Simple accesibility elements" it.name="Semplice elementi di accessibilità" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility_green.png">
 	<item name="Sidewalks" it.name="Marciapiede" type="way" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/sidewalk.png">
 		<key key="highway" value="footway" />
 		<key key="footway" value="sidewalk" />

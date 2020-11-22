@@ -1,9 +1,10 @@
-meta{
+meta
+{
     title: "Mapping Accessibility";
     description: "Mappatura dell'accessibilità";
-    version: "1.[[revision]]_[[date]]";
+    version: "2.[[revision]]_[[date]]";
     author: "LorenzoStucchi";
-    link: "https://wiki.openstreetmap.org/wiki/ViaLibera";
+    link: "https://wiki.openstreetmap.org/wiki/User:LorenzoStucchi/ViaLibera";
     icon: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/accessibility.png";
     watch-modified: true;
 }
@@ -24,6 +25,13 @@ node|z16-[kerb = lowered]{
 node|z16-[kerb = raised]{
 	icon-image: "https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_red.png";
 	icon-width: 15;
+}
+node|z16-[kerb]::background{
+	symbol-shape: circle;
+	symbol-size: 13;
+	symbol-fill-color: #FFFFFF;
+    symbol-fill-opacity: 0.9;
+    z-index: -5;
 }
 
  /* Style preset for barriers obstacle for wheelchair */
@@ -68,17 +76,17 @@ node|z16-[wheelchair = no]::wheelchair, area|z16-[wheelchair = no]::wheelchair{
  /* Style preset for sidewalk */
 way|z14-[footway = sidewalk]{
 	z-index: 10;
-	color: dodgerblue;
+	color: darkorange;
 	width: 3;
-	dashes: 6, 2;
+	dashes: 10, 6;
 }
 
  /* Style preset for crossing */
 way|z14-[footway = crossing], way|z14-[cycleway = crossing], way|z14-[path = crossing]{
 	z-index: 10;
-	color: darkblue;
-	width: 3;
-	dashes: 6, 2;
+	color: gold;
+	width: 6;
+	dashes: 4, 4;
 }
 
 node|z14-[footway = crossing]{
