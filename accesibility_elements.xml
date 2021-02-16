@@ -44,10 +44,12 @@
 <!-- Chunk for kerbs -->
 <chunk id="kerb_tags">
 	<reference ref="material_smoothness"/>
+	<space />
 	<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
 	<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
 	<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
 	<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
+	<key key="barrier" value="kerb" />
 </chunk>
 
 <!-- Group of elements for accessibility -->
@@ -119,7 +121,7 @@
 		</item>
 
 		<!-- Schema for lowered kerb -->
-		<item name="Lowered kerb" it.name="Cordolo ribassato" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_orange.png">
+		<item name="Lowered kerb" it.name="Cordolo con rampa" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb_orange.png">
 			<label text="Insert the elements for a lowered kerb" it.text="Inserire gli elementi per un cordolo ribassato" />
 			<space />
 			<key key="kerb" value="lowered" />
@@ -140,7 +142,7 @@
 
 		<!-- Schema for traffic sign -->
 		<item name="Traffic sign" it.name="Segnaletica verticale" type="node" icon="presets/vehicle/restriction/stop.svg">
-			<label text="Insert the elements for a drain" it.text="Inserire gli elementi per una caditoia" />
+			<label text="Insert the elements for a traffic sign" it.text="Inserire gli elementi per cartello stradale" />
 			<space />
 			<text key="traffic_sign" text="Type of traffic sign" it.text="Tipo di segnaletica verticale" />
 			<key key="support" value="pole"/>
@@ -154,6 +156,7 @@
 		<item name="Drain" it.name="Caditoia, tombino" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/drain.png">
 			<label text="Insert the elements for a drain" it.text="Inserire gli elementi per una caditoia" />
 			<space />
+			<key key="man_made" value="manhole" />
 			<key key="manhole" value="drain" />
 			<text key="obstacle:description" text="Description of the drain, possible to insert the width of the holes (e.g. 0.02 m)" it.text="Descrizione della caditoia, possibile inserire la larghezza dei fori (es. 0.02 m)"  />
 			<check key="obstacle:wheelchair" text="Obstacle for wheelchair" it.text="Ostacolo per sedia a rotelle" />
@@ -231,7 +234,7 @@
 		</item>
 
 		<!-- Schema for hole -->
-		<item name="Big hole" it.name="Buca profonda isolata" type="way" icon="">
+		<item name="Big hole" it.name="Buca profonda isolata" type="way">
 			<label text="Insert a big hole" it.text="Inserire una buca profonda isolata" />
 			<space />
 			<key key="smoothness" value="very_bad" />
@@ -256,8 +259,8 @@
 		<key key="highway" value="footway" />
 		<key key="footway" value="sidewalk" />
 		<reference ref="material_smoothness" />
-		<text key="width" text="sidewalk width (e.g. 1.2 m)" it.text="Larghezza del marciapiede (es. 1.2 m)"  />
 		<space />
+		<text key="width" text="sidewalk width (e.g. 1.2 m)" it.text="Larghezza del marciapiede (es. 1.2 m)"  />
 		<text key="incline" text="sidewalk inlination (e.g. 2.5%)" it.text="Inclinazione del marciapiede (es. 2.5%)"  />
 		<text key="incline:across" text="sidewalk inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale del marciapiede (es. 2.5%)"  />
 		<text key="height" text="sidewalk height (e.g. 1.2 m)" it.text="Altezza del marciapiede (es. 1.2 m)"  />
@@ -269,6 +272,10 @@
 		<item name="Sidewalks" it.name="Marciapiede" type="way" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/sidewalk.png">
 			<key key="highway" value="footway" />
 			<key key="footway" value="sidewalk" />
+		</item>
+
+		<item name="Kerb" it.name="Cordolo" type="node" icon="https://github.com/LorenzoStucchi/accessibility_JOSM_preset/raw/master/symbols/kerb.png">
+			<key key="barrier" value="kerb" />
 		</item>
 
 		<item name="Pedestrian crossing" it.name="Attraversamento pedonale" type="way" icon="presets/transport/way/dedicated_footway.svg">
@@ -289,11 +296,11 @@
 			<key key="segregated" value="no" />
 		</item>
 
-		<item id="highway_crossing_node" name="(Node) Crossing on highways" it.name="(Nodo) Attraversamenti su strade" type="node" icon="presets/vehicle/crossing.svg">
+		<item name="(Node) Crossing on highways" it.name="(Nodo) Attraversamenti su strade" type="node" icon="presets/vehicle/crossing.svg">
 			<key key="highway" value="crossing" />
 		</item>
 				
-		<item id="railway_crossing_node" name="(Node) Crossing on railway" it.name="(Nodo) Attraversamenti su rotaie" type="node" icon="presets/transport/railway/crossing.svg">
+		<item name="(Node) Crossing on railway" it.name="(Nodo) Attraversamenti su rotaie" type="node" icon="presets/transport/railway/crossing.svg">
 			<key key="railway" value="crossing" />
 		</item>
 	</group>
