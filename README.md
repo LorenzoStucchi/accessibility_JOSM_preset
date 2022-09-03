@@ -8,7 +8,7 @@ The preset is available in the [*tagging preset*](https://josm.openstreetmap.de/
 
 ## Style
 
-The style is available in the [*map pain style*](https://josm.openstreetmap.de/wiki/Help/Preferences/Map#MapPaintStyles) pannel in the settings.  This is the page in [JOSM wiki](https://josm.openstreetmap.de/wiki/Styles/MappingAccessibility).
+The style is available in the [*map paint style*](https://josm.openstreetmap.de/wiki/Help/Preferences/Map#MapPaintStyles) pannel in the settings.  This is the page in [JOSM wiki](https://josm.openstreetmap.de/wiki/Styles/MappingAccessibility).
 
 ## Suggestion
 
