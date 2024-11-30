@@ -35,7 +35,7 @@
 	<reference ref="material_smoothness"/>
 	<space />
 	<text key="width" text="crossing width (e.g. 1.2 m)" it.text="Larghezza dell'attraversamento (es. 1.2 m)"  />
-	<text key="incline" text="crossing inlination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
+	<text key="incline" text="crossing inclination (e.g. 2.5%)" it.text="Inclinazione dell'attraversamento (es. 2.5%)"  />
 	<text key="incline:across" text="crossing inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale dell'attraversamento (es. 2.5%)"  />
 	<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
 	<check key="tactile_paving" text="Presence of tactile paving" it.text="Presenza di pavimento tattile" />
@@ -47,7 +47,7 @@
 	<space />
 	<text key="width" text="kerb width (e.g. 1.2 m)" it.text="Larghezza del cordolo (es. 1.2 m)"  />
 	<text key="kerb:height" text="kerb height (e.g. 0.02 m)" it.text="Altezza del cordolo (es. 0.02 m)"  />
-	<text key="incline" text="kerb inlination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
+	<text key="incline" text="kerb inclination (e.g. 2.5%)" it.text="Inclinazione del cordolo (es. 2.5%)"  />
 	<check key="tactile_paving" text="Presence of tactile paving on the kerb" it.text="Presenza di pavimento tattile" />
 	<key key="barrier" value="kerb" />
 </chunk>
@@ -261,7 +261,7 @@
 		<reference ref="material_smoothness" />
 		<space />
 		<text key="width" text="sidewalk width (e.g. 1.2 m)" it.text="Larghezza del marciapiede (es. 1.2 m)"  />
-		<text key="incline" text="sidewalk inlination (e.g. 2.5%)" it.text="Inclinazione del marciapiede (es. 2.5%)"  />
+		<text key="incline" text="sidewalk inclination (e.g. 2.5%)" it.text="Inclinazione del marciapiede (es. 2.5%)"  />
 		<text key="incline:across" text="sidewalk inclination across (e.g. 2.5%)" it.text="Inclinazione trasversale del marciapiede (es. 2.5%)"  />
 		<text key="height" text="sidewalk height (e.g. 1.2 m)" it.text="Altezza del marciapiede (es. 1.2 m)"  />
 		<check key="lit" text="Presence of lighting" it.text="Presenza di illuminazione" />
